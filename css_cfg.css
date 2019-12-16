@@ -10,19 +10,19 @@
   
 
   /* 꽁게더 타이틀 */
-  --logo-URL: url("https://verimea.github.io/Ggongbless_Holloween19/source/GgongLogo.png");
+  --logo-URL: url("https://verimea.github.io/Ggongbless_Xmas/source/GgongLogo.png");
   --logo-Width: 158px;
   --logo-Height: 50px;
   --logo-size-mobile: 90px 32px;
 
   /* 접속자 */
-  --icon-URL: url("https://verimea.github.io/Ggongbless_Holloween19/source/Icon.png");
-  --pre-comment: "";
-  --sub-comment: "명에게 어둠의 종말이 다가왔군";
+  --icon-URL: url("https://verimea.github.io/Ggongbless_Xmas/source/Icon.png");
+  --pre-comment: "산타꽁치가 ";
+  --sub-comment: "명의 꽁신도에게 찾아왔습니다!";
 
   /* 위로가기 버튼 */
-  --up-URL: url("https://verimea.github.io/Ggongbless_Holloween19/source/GoUp.png");
+  --up-URL: url("https://verimea.github.io/Ggongbless_Xmas/source/GoUp.png");
 
   /* 마우스 커서 */
-  --cursor-URL: url("https://verimea.github.io/Ggongbless_Holloween19/source/Cursor.png");
+  --cursor-URL: url("https://verimea.github.io/Ggongbless_Xmas/source/Cursor.png");
 }

@@ -7,12 +7,11 @@
 }
 
 @font-face { 
-    font-family: 'DOSMyungjo'; 
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSMyungjo.woff') format('woff'); 
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff'); 
     font-weight: normal; 
     font-style: normal; 
 } 
-
 
 * {
     font-family: 'GoyangIlsan';
