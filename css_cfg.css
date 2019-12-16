@@ -1,7 +1,7 @@
 :root {
   --color-0: #ffffff; /* */
   
-  --color-1: #15155b; /* */
+  --color-1: #ffffff; /* */
   --color-2: #101046; /* */
   --color-3: black; /* 메인 컬러 */
   --color-4: #FF531A; /* 서브 컬러 */
@@ -18,7 +18,7 @@
   /* 접속자 */
   --icon-URL: url("https://verimea.github.io/Ggongbless_Xmas/source/Icon.png");
   --pre-comment: "산타꽁치가 ";
-  --sub-comment: "명의 꽁신도에게 찾아왔습니다!";
+  --sub-comment: "명의 엘프노예들을 환영합니다!";
 
   /* 위로가기 버튼 */
   --up-URL: url("https://verimea.github.io/Ggongbless_Xmas/source/GoUp.png");
