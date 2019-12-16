@@ -1,0 +1,506 @@
+/* 데스크톱 뷰 */
+
+html {
+height:auto !important;
+/* 배경을 현재의 위아래 그레이디언트로 만들어줍니다 */
+background: linear-gradient(to bottom, var(--color-1), var(--color-2), var(--color-3));
+}
+
+body {
+background: transparent;
+}
+
+a {
+color: var(--color-4);
+}
+a:hover {
+  color: var(--color-5);
+}
+/* 로고 */
+/* 꽁게더 로고를 트게더 대신에 보여주는 곳 */
+header .row > div:nth-child(1) > a {
+background-repeat: no-repeat; 
+display: block; 
+width: var(--logo-Width); 
+height: var(--logo-Height);
+background-image: var(--logo-URL); 
+}
+
+/* 꽁게더 로고를 가려줍니다 */
+header .row > div:nth-child(1) > a img { 
+display:none; 
+}
+
+#board-info > h1 > a {
+color: var(--color-5);
+}
+
+#board-info #score-area {
+display: none;
+}
+
+#board-info #board-info-bottom a {
+font-size: 12px;
+color: var(--color-4);
+}
+
+/* 헤더 */
+header #header-bar { 
+margin-top: 0.2em; 
+margin-bottom: 1em; 
+padding-right: 30px; 
+padding-left: 30px; 
+}
+
+/* 헤더 스타일링 */
+header #header-bar > .row {
+padding-top: 0.3em; 
+padding-bottom: 0.3em; 
+border-top: 4px solid var(--color-5);
+/* 헤더의 컬러 */
+background: var(--color-2);
+border-bottom: 2px solid var(--color-1); 
+border-right: 2px solid var(--color-1) }
+
+/* 헤더 글씨 색상 변경 */
+header #header-bar a.dropdown-toggle {
+display: inline-block;
+color: var(--color-5);
+text-decoration: none;
+padding: 0.3em 0;
+}
+
+/* 광고란 컬러 변경 */
+header #header-bar #header-top-notice a {
+color: var(--color-5);
+text-decoration: none;
+}
+
+/* 광고 스타일링 */
+header #header-bar #header-top-notice strong.notice-badge {
+background: var(--color-5); 
+padding: 4px 8px; 
+color: var(--color-3); 
+font-weight: bold;
+}
+
+/* 서치바 색상 변경 */
+header #right-search-form > input[type="text"] {
+border: 3px solid var(--color-5);
+}
+header #right-search-form > #right-search-btn {
+color: var(--color-5);
+}
+
+#main.menu-wrapper > a
+
+/* 글 위치 */
+#article-list #article-option-area>#article-option-area-toggle-btn { 
+position: relative; 
+right: 14px; 
+}
+
+#article-list > .article-list-row.hot { 
+background:-webkit-linear-gradient(135deg, var(--color-3) 0%,var(--color-2) 11%,var(--color-0) 40%,var(--color-0) 90%,var(--color-2) 95%,var(--color-3) 100%); 
+}
+#article-list > .article-list-row.active {
+background-color: var(--color-0);
+color: var(--color-4);
+}
+#article-list > .article-list-row.active > .item > .list-title > a{
+color: var(--color-4);
+}
+#article-list > .article-list-row.active > .item > .list-title > .list-writer > span {
+color: black;
+}
+
+/* 트게더 메뉴 */
+#main .menu-wrapper > .header {
+/* 컬러 스타일링 */
+background: -webkit-linear-gradient(270deg, var(--color-1) 10%,var(--color-2) 100%);
+color: var(--color-5); 
+padding: 0.45em 1.4em 0.45em 1em; 
+font-weight: bold; 
+border-radius: 10px 10px 0 0;
+}
+
+#main .menu-wrapper > a {
+display: block;
+background: transparent;
+padding: 0.3em 1.4em 0.3em 0.7em;
+text-decoration: none;
+color: var(--color-5);
+border-bottom: 1px solid #f1f1f1;
+}
+
+#main .menu-wrapper > a:hover {
+  background: black;
+}
+
+#main .menu-wrapper > a > em { 
+color: var(--color-0);
+}
+#main .menu-wrapper > a > i.fa.fa-square { 
+color:var(--color-0); 
+}
+/* 스케줄은 개별적용 */
+#main .menu-wrapper > .header > a {
+color: var(--color-5);
+}
+
+/* 상자들의 테두리를 지워줍니다 */
+header #header-bar > .row,
+#main .menu-wrapper,
+#main #main-content > div.frame {
+border-right: none;
+border-bottom: none;
+border-radius: 10px 10px 0 0;
+background: transparent;
+color: var(--color-0);
+}
+
+/* 트게더 메뉴 사이 색 */
+#main .menu-wrapper .spacer {
+background: var(--color-0);
+height: 2px;
+}
+
+/* 고정 포스트 로고 색 */
+span.a-badge i.fa.fa-info-circle { 
+color: var(--color-4) !important; 
+}
+
+/* 그림자 */
+header #header-bar > .row {
+box-shadow: 3px 0px 10px rgba(0, 02, 22, 0.2);
+border-radius: 0 0 15px 15px;
+}
+#main #main-content > div.frame {
+box-shadow: 3px 0px 10px rgba(0, 02, 22, 0.2);
+border-radius: 0 0 15px 15px;
+/*   background: -webkit-linear-gradient(135deg, var(--color-0) 0%,var(--color-0) 99%, var(--color-2) 99%,var(--color-3) 100%); */
+}
+
+/* 페이지에 마우스 댔을때 컬러 변환 */
+/* 1.5초 걸림*/
+#article-list > .article-list-row.notice:hover { 
+animation: 30s anim_hovered_background; 
+}
+
+.pagination > li > a {
+background: transparent;
+color: var(--color-0);
+border: 0px;
+}
+.pagination > li > a:hover { 
+animation: infinite AquaLinkBG 1.5s; 
+color: var(--color-0);
+}
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover
+{ 
+background-color: var(--color-4); 
+border-color: var(--color-4); 
+} /* 첫번째 색에서 두번째 색으로 바뀜 */
+
+#article-neighbor-list > div:hover {
+background: var(--color-0);
+}
+
+#article-neighbor-list > div > span {
+color: var(--color-6);
+}
+
+#article-neighbor-list > div > a {
+display: table-cell;
+color: var(--color-6);
+text-decoration: none;
+line-height: 18px;
+word-break: break-all;
+text-overflow: ellipsis;
+white-space: nowrap;
+overflow: hidden;
+max-width: 660px;
+line-height: 28px;
+vertical-align: middle;
+}
+
+#article-content-wrapper #article-content {
+float: none;
+clear: both;
+padding: 1em;
+border-left: 1px solid transparent;
+border-right: 1px solid transparent;
+word-wrap: break-word;
+}
+
+#article-content-wrapper > .vote-area {
+text-align: center;
+padding: 0 0.8em 1.5em;
+border-left: 1px solid transparent;
+border-right: 1px solid transparent;
+}
+
+/* 글 읽을 때 헤더 컬러 */
+#article-content-wrapper > .header { 
+border-top: 3px solid var(--color-4); 
+background: transparent; 
+color: var(--color-0);
+
+}
+/* 글 읽을 때 푸터 컬러 */
+#article-content-wrapper > .footer { 
+border-bottom: 3px solid var(--color-4); 
+background: transparent; 
+}
+/* 게시글 타임 컬러 */
+#article-list #article-list-category > a { 
+display: inline-block; 
+padding: 11px 16px; 
+background: var(--color-4); 
+text-decoration: none; 
+font-size: 12px; 
+font-weight: bold 
+}
+
+/* 게시글 애니메이션 */
+#article-list #article-list-category > a:hover { 
+animation: infinite AquaLinkBG 1.5s; 
+}
+
+/* 게시글 카테고리 배경 컬러 */
+#article-list #article-list-category { 
+border-top: 3px solid var(--color-4); 
+background:  -webkit-linear-gradient(45deg, var(--color-2) 0%,var(--color-2) 80%,var(--color-3) 100%); 
+}
+
+/* 댓글 컬러 */
+#article-reply-area #reply-real-area .reply > .reply-header { 
+background: var(--color-2); 
+}
+/* 댓글 갯수 스타일링 */
+#article-reply-area > .header h5 { 
+font-size: 14px; 
+color: var(--color-4); 
+font-weight: bold; 
+}
+
+/* 댓글 작성자 스타일링 */
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer {
+color: var(--color-4);
+}
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, #article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged {
+font-weight: bold;
+color: var(--color-6);
+cursor: pointer;
+}
+
+
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu a, #article-reply-area #reply-best-area .reply > .reply-header > .reply-menu a {
+text-decoration: none;
+color: var(--color-6);
+}
+
+#article-reply-area #reply-real-area .reply.active, #article-reply-area #reply-best-area .reply.active {
+    background-color: var(--color-3);
+}
+
+/* 댓글 타임 스탕일링 */
+.time {
+color: var(--color-4);
+}
+
+/* 게시글 위에 수평선 스타일링 */
+#article-list > .article-list-row:nth-of-type(2) {
+border-top: 2px solid var(--color-0);
+}
+/* 좋아요 스타일링 */
+#article-list > .article-list-row > .item > .list-header > span { 
+background-color: var(--color-5); 
+color: var(--color-0); 
+font-weight: bold; 
+padding: 1px 5px; 
+font-size: 11px; 
+border-radius: 100px; 
+}
+#article-list > .article-list-row > .item > .list-header.v0 > span { 
+background-color: var(--color-4); 
+color: var(--color-0); 
+font-weight: bold; 
+padding: 1px 5px; 
+font-size: 11px; 
+border-radius: 100px 
+}
+#article-list > .article-list-row:hover > .item > .list-header.v0 > span { 
+background-color: var(--color-4); 
+color: var(--color-0); 
+font-weight: bold; 
+padding: 1px 5px; 
+font-size: 11px; 
+border-radius: 100px 
+}
+
+#article-list > .article-list-row > .item > .list-title:hover > a{
+color: var(--color-5);
+}
+#article-list > .article-list-row > .item > .list-title > a{
+color: var(--color-0);
+}
+#article-list > .article-list-row > .item > .list-title > a:hover{
+color: var(--color-4);
+}
+#article-list > .article-list-row > .item > .list-title > small.comment-count { 
+color: var(--color-5);
+}
+
+#article-list > .article-list-row > .item > .list-title > .list-writer.logged > span {
+color: var(--color-5);
+font-weight: bold;
+}
+/* 보고있는 사람들 */
+#board-info #viewers-area #viewers:before { 
+content: var(--pre-comment); 
+cursor: text; 
+}
+#board-info #viewers-area #viewers:after { 
+content: var(--sub-comment); 
+cursor : text; 
+}
+
+/* "꽁성도 신도 ..." 색상 변경 */
+#board-info #viewers-area {
+color: var(--color-5);
+}
+
+/* 스트리머 프로필 테두리 */
+/* #board-info #board-info-profile-img { border: 2px solid var(--color-4); border-radius: 30%; width: 50px; height: 50px; } */
+#board-info #board-info-profile-img { 
+width: 50px; 
+height: 50px;
+border: 2px solid var(--color-0);
+border-radius: 50%;
+  /*
+padding: 50px;
+background: url("https://verimea.github.io/Ggongbless_Holloween19/source/GgongProfile_50x50.png");
+background-size: auto;
+background-repeat: no-repeat;
+background-position: right top;
+  */
+}
+
+
+/* 보고있는 사람들 뱃지 */
+#board-info #viewers-area .fa-user:before { 
+color: rgba(95,02,22,0); 
+content: var(--icon-URL); 
+vertical-align: sub;
+}
+
+/* 버튼 애니메이션 */
+.btn-primary { 
+background: var(--color-4);
+border: 1px solid var(--color-4);
+}
+.btn-primary:hover { 
+animation: infinite AquaLinkBG 3s; 
+}
+.btn.square {
+    border: 1px solid var(--color-4);
+    font-size: 12px;
+}
+.btn.square.btn-default {
+  border: 1px solid var(--color-2);
+}
+#article-list #article-list-menu > .btn.best {
+    position: absolute;
+    left: 0;
+    color: var(--color-0);
+    background-image: none;
+    background-color: var(--color-4);
+    border: 2px solid var(--color-4);
+}
+#article-list #article-list-menu > .btn.best:hover {
+animation: infinite AquaLinkBG 3s; 
+}
+#writeCommentBtn {
+    border: 1px solid var(--color-4);
+}
+
+/* 푸터 스타일링 */
+footer {
+color: var(--color-5);
+}
+
+footer a {
+color: var(--color-6);
+}
+
+footer a:hover{
+color: var(--color-4)
+}
+
+#movetotop img{display:none}
+
+#movetotop{
+display: inline-block;
+opacity:1;
+background:var(--up-URL);    
+width: 60px;  
+height: 32px;
+background-size: contain;}
+
+/* 키프레임 애니메이션 스타일링 */
+@keyframes AquaLinkBG {
+0% { background-color: var(--color-6); }
+40% { background-color: var(--color-5); }
+100% { background-color: var(--color-6); }
+}
+@keyframes anim_hovered_background {
+5% { background-color: var(--color-0); }
+}
+
+/* 마우스 커서 포인터 */
+html,
+body,
+.fr-popup.emoticons,
+.fr-top,
+select.form-control,
+input[type=checkbox],
+input[type=radio],
+.opt
+{
+cursor: url("https://verimea.github.io/Ggongbless_Holloween19/source/Cursor.png") 0 0, auto !important;
+}
+
+
+/* 마우스 커서 링크 */
+#right-search-form>#right-search-btn,
+#board-info #board-info-bottom #addFavoriteBtn,
+#article-list #article-option-area>#article-option-area-toggle-btn,
+#article-list>.article-list-row>.item>.list-title>.list-writer>span,
+.reply > .reply-header > .reply-writer.logged,
+.reply-menu,
+.btn,
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn,
+.fr-view img,
+.pull-left,
+a {
+cursor: url("https://verimea.github.io/Ggongbless_Holloween19/source/Cursor.png") 0 0, auto !important;
+}
+
+
+
+/* 마우스 커서 텍스트 */
+span#viewers,
+#article-list #boardSearchForm .form-control,
+.fr-view,
+.fr-box.fr-basic.fr-element,
+input[type='text']
+{
+cursor: url("https://verimea.github.io/Ggongbless_Holloween19/source/Cursor.png") 0 0, auto !important;
+}

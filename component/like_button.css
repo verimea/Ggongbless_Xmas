@@ -1,0 +1,81 @@
+.vote-btn[data-type="up"] {
+
+    border: none;
+  
+    font-size: 0;
+  
+  }
+  
+  
+  
+  .vote-btn[data-type="up"]:hover {
+  
+    background: none !important;
+  
+  }
+  
+  
+  
+  .vote-btn[data-type="up"]::before {
+  
+    display: inline-block;
+  
+    background: white;
+  
+    border: solid #5cb85c 1px;
+  
+    float: left;
+  
+    width: 60px;
+  
+    height: 60px;
+  
+    border-radius: 60px;
+  
+    font-size: 26pt;
+  
+    content: "\f164";
+  
+    padding-top: 17px;
+  
+    padding-left: 2px;
+  
+    font: normal 22px/1 FontAwesome;
+  
+    -moz-transition:color .2s ease;
+  
+    -o-transition:color .2s ease;
+  
+    -ms-transition:color .2s ease;
+  
+    -webkit-transition:color .2s ease;
+  
+    transition:color .2s ease;
+  
+  }
+  
+  
+  
+  .vote-btn[data-type="up"]:hover::before {
+  
+    background: #5cb85c;
+  
+    color: white;
+  
+  }
+  
+  
+  
+  .vote-btn[data-type="up"] span {
+  
+    float: left;
+  
+    padding-top: 14px;
+  
+    padding-left: 15px;
+  
+    font-size: 22px;
+  
+    color: #5cb85c;
+  
+  }
